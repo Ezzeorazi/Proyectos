@@ -4,9 +4,14 @@
 }
 
 /* Navbar */
+.navbar-collapse.show {
+  background-color: #000000;
+}
+
+
 .navbar {
   height: 70px;
-
+  position: absolute;
 }
 
 .navbar-brand img {
@@ -22,7 +27,9 @@
 .navbar-custom .navbar-nav .nav-link {
   color: #8A4B08 !important; 
   font-size: 15px;
-  
+  margin: 2px;
+  padding: 2px;
+  margin-left: 5px;
 }
 
 .navbar-nav .nav-link {
@@ -34,29 +41,48 @@
   transform: scale(1.1); 
 }
 
+.navbar-collapse.show {
+  background-color: #000000;
+  z-index: 1;
+}
 
 /* imagen */
 
-.container img{
-  padding-top: 50px;
+.carousel {
+  height: 250px;
+  margin-top: 10px;
 }
 
+.carousel-item img {
+  max-width: 100%;
+  max-height: 85vh;
+}
+
+
 /* Quienes somos y beneficios */
+
+.container-qs {
+  margin-top: 20px;
+}
 
 .container-header, 
 .container-list {
     padding: 20px;
+    margin-left: 5px;
+    text-align: center;
   }
   
-.container_title {
+.container_title  {
     font-size: 24px;
     margin-bottom: 20px;
     font-style: italic;
+    text-align: center;
   }
 
 .container p {
     font-size: 16px;
     line-height: 1.5;
+    
   }
   
 .ul {
@@ -65,7 +91,8 @@
   }
 
 .slide-list li {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: left;
 }
 
 .slide-list {
@@ -97,9 +124,59 @@
   transform: translateX(0);
 }
 
-.check-mark {
+
+
+.circular-background {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+ margin-top: -20px;
+}
+
+.circular-background img {
+  padding-top: 20px;
+}
+
+.circular-background:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #8A4B08; /* Color del fondo circular */
+  opacity: 0.3; /* Opacidad del fondo circular */
+  z-index: -1;
+  border-radius: 50%;
+}
+/* Ficha tecnica */
+.container__title {
+  background-color: #8A4B08;
+  color: aliceblue;
+  border-radius: 5px;
+  display: inline-block; 
+  padding: 3px;
+}
+
+.container__title-one {
   color: #8A4B08;
 }
+
+.row h5 {
+  color: #8A4B08;
+}
+
+.custom-list {
+  padding-left: 10px;
+  margin-left: 0;
+  color: #8A4B08;
+}
+
+.uso {
+  color: #8A4B08;
+}
+
 
 /* contacto */
 
@@ -130,7 +207,7 @@
     margin-top: 25px;
     color: #8A4B08;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
   }
   .footer a {
     color: #8A4B08;
@@ -144,4 +221,28 @@
     margin-top: 5px;
     padding: 0;
   }
-  
+  .text-center{
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 400px) {
+    .text-center{
+      margin-top: 100px;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .text-center{
+      margin-top: 150px;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .text-center{
+      margin-top: 200px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .text-center{
+      margin-top: 260px;
+    }
+  }

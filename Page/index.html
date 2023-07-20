@@ -11,7 +11,7 @@
 </head>
 <body class="scrollspy" data-bs-spy="scroll" data-bs-target="#navbarNav">
   <!-- navbar -->
-  <nav class="navbar navbar-expand-md fixed-top navbar-custom" id="navbarNav">
+  <nav class="navbar navbar-expand-md navbar-custom" id="navbarNav">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="img/GoldenHorses.jpg" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -19,7 +19,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav col-10 justify-content-center">
+        <ul class="navbar-nav col-10 justify-content-center mb-2">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
@@ -30,58 +30,109 @@
             <a class="nav-link" href="#producto">Producto</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#fichatecnica">Ficha Tecnica</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <hr>
   <!-- img - carrousel-->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12" >
-        <img src="img/Horse.jpg" class="img-fluid w-100" alt="Imagen responsive">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/horse.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/horse2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/horse3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
 
-  <!-- quienes somos -->
-  <div class="container" id="container-qs">
-    <div class="row justify-content-center">
-      <div class="col-md-8 text-center">
-        <h3 class="container_title" id="container-qs">CONCENTRADO ENERGÉTICO PARA EQUINOS DE ALTO RENDIMIENTO</h3>
+      <!-- quienes somos -->
+    <div class="container" >
+      <div class="text-center">
+        <h3 class="container_title" id="container-qs" >CONCENTRADO ENERGÉTICO PARA EQUINOS DE ALTO RENDIMIENTO</h3>
         <p>Agropecuaria Los Nonos S.R.L, una firma familiar dedicada a la producción primaria de granos, comienza en
           2013 a concretar la idea de procesar sus propios granos y destinarlos exclusivamente a la nutrición animal.
           Desarrollando suplementos alimenticios concentrados - proteicos y energéticos - en su planta de extrusión y
           comercializandolos con las principales empresas de nutrición animal del país.
           A principios del 2021, comienza el desarrollo de Golden Horses, un producto mucho más completo y elaborado
           destinado específicamente a la nutrición equina. Golden Horses aprovecha las ventajas distintivas del
-          procesamiento de granos de Agropecuaria Los Nonos SRL para crear un alimento concentrado<span id="producto"></span> energético
+          procesamiento de granos de Agropecuaria Los Nonos SRL para crear un alimento concentrado energético
           excepcional.</p>
       </div>
     </div>
-  </div>
+  
+  
+  
   <hr>
-  <!-- BENEFICIOs -->
-  <div class="container" >
+  <!-- Producto -->
+  <div class="container" id="producto">
     <div class="row justify-content-center">
-      <div class="col-md-6 text-center">
-        <h4 class="container_title">Conocé los beneficios de Golden Horses elaborado 100% con granos extrusados</h4>
+      <h4 class="container_title">Conocé los beneficios de Golden Horses elaborado 100% con granos extrusados</h4>
+      <div class="col-md-8">
+        <ul class="slide-list">
+          <li><i class="fa-solid fa-seedling"></i> Elaborado con granos de propia producción.</li>
+          <li><i class="fa-solid fa-dna"></i> Provee proteínas de alto valor biológico.</li>
+          <li><i class="fa-solid fa-magnifying-glass-chart"></i> Alto control de calidad en sus materias primas.</li>
+          <li><i class="fa-solid fa-user-doctor"></i> Logra un mejor aprovechamiento en el tubo digestivo.</li>
+          <li><i class="fa-solid fa-bolt"></i> Maximiza el desempeño en caballos con altas exigencias físicas.</li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center" id="animated-image">
+        <div class="circular-background" >
+          <img src="img/bolsa-sin-sombra.png" alt="Bolsa-producto" class="img-fluid" >
+        </div>
       </div>
     </div>
-    <ul class="slide-list">
-      <li>Elaborado con granos de propia producción.</li>
-      <li>Provee proteínas de alto valor biológico.</li>
-      <li>Alto control de calidad en sus materias primas.</li>
-      <li>Logra un mejor aprovechamiento en el tubo digestivo.</li>
-      <li id="contacto">Maximiza el desempeño en caballos con altas exigencias físicas.</li>
-    </ul>
   </div>
   <hr>
+  <!-- Ficha tecnica -->
+  <div class="container" id="fichatecnica" >
+    <h4 class="container__title-one">Ingredientes:</h4>
+    <div class="row">
+      <h5>Composición centesimal:</h5>
+      <div class="col-md-6">
+        <ul class="custom-list">
+          <li>Tenor min Prot. Bruta: 18%</li>
+          <li>Tenor min Cont. Graso: 4%</li>
+          <li>Tenor máx Materia Seca: 75%</li>
+          <li>Tenor max Fibra Cruda: 7.45%</li>
+          <li>Tenor máx Humedad: 10%</li>
+          <li>Valor Energético (Mcal/Kg producto): 2,871</li>
+          <li>Tenor de Fósforo; minimo,máximo: 0,13-0,23%</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="custom-list">
+          <li>Magnesio 0,017%</li>
+          <li>Zinc 30 ppm</li>
+          <li>Manganeso 20 ppm</li>
+          <li>Cobre 10 ppm</li>
+          <li>Selenio 0,065 ppm</li>
+          <li>Bio-Mos AR Alltech 0,1%</li>
+          <li>Tenor de Calcio: mínimo, máximo: 0,1-0,24%</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row col-12">
+      <h4 class="uso">Recomendaciones de uso:</h4>
+      <p class="uso">Entre 0,5 y 1% del peso vivo distribuido en 1,2 o 3 comidas diarias.</p>
 
+    </div>
+
+  </div>
+  
+
+<hr>
   <!-- Contacto -->
-  <div class="container" >
+  <div class="container" id="contacto">
     <div class="form-container">
       <h3>Formulario de contacto</h3>
       <form>
@@ -130,6 +181,7 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
