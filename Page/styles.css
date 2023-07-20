@@ -5,7 +5,7 @@
 
 /* Navbar */
 .navbar {
-  height: 80px;
+  height: 70px;
 
 }
 
@@ -21,9 +21,19 @@
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   color: #8A4B08 !important; 
-  font-size: 20px;
+  font-size: 15px;
   
 }
+
+.navbar-nav .nav-link {
+  transition: transform 0.2s ease;
+}
+
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1); 
+}
+
 
 /* imagen */
 
@@ -120,6 +130,7 @@
     margin-top: 25px;
     color: #8A4B08;
     text-align: center;
+    font-size: 12px;
   }
   .footer a {
     color: #8A4B08;
