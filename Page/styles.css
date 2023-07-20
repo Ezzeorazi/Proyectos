@@ -3,25 +3,35 @@
     
 }
 
-.navbar-brand img {
-  width: 100px;
+/* Navbar */
+.navbar {
   height: 50px;
+
+}
+
+.navbar-brand img {
+  width: 10px;
+  height: 10px;
 }
 
 .navbar-custom {
-  background-color: #000000; /* Fondo negro */
+  background-color: #000000; 
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-  color: #8A4B08 !important; /* Letras blancas */
+  color: #8A4B08 !important; 
   font-size: 20px;
   
 }
 
+/* imagen */
+
 .container img{
   padding-top: 50px;
 }
+
+/* Quienes somos y beneficios */
 
 .container-header, 
 .container-list {
@@ -48,6 +58,41 @@
     font-size: 18px;
 }
 
+.slide-list {
+  overflow: hidden;
+  padding: 0;
+  list-style: none;
+}
+
+.slide-list li {
+  color: #8A4B08;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.slide-list li.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 0.5s ease-out;
+}
+
+.slide-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.check-mark {
+  color: #8A4B08;
+}
+
+/* contacto */
+
 .form-container {
   padding: 15px;
   margin-top: 5px;
@@ -63,6 +108,14 @@
 .form-container button {
   margin-top: 5px;
 }
+
+/* footer */
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
 
   .footer .row {
     margin-bottom: 1px;
@@ -86,35 +139,6 @@
     padding: 0;
   }
   
-
-  .slide-list {
-    overflow: hidden;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .slide-list li {
-    color: #8A4B08;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .slide-list li.slide-in {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .slide-in-left {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 1s ease-out, transform 0.5s ease-out;
-  }
-  
-  .slide-in-left.show {
-    opacity: 1;
-    transform: translateX(0);
-  }
 
 
  
