@@ -20,7 +20,7 @@
 }
 
 .container img{
-  padding-top: 120px;
+  padding-top: 50px;
 }
 
 .container-header, 
@@ -56,24 +56,20 @@
 
 .form-group input,
 .form-group textarea {
-  margin-top: 10px;
+ 
+  margin-bottom: 15px;
   color: #8A4B08;
 }
 .form-container button {
   margin-top: 5px;
 }
 
-.footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
   .footer .row {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
   
   .footer p {
-    margin: 0;
+    margin-top: 25px;
     color: #8A4B08;
     text-align: center;
   }
@@ -86,6 +82,8 @@
   .footer .senasa {
     max-width: 100%;
     height: auto;
+    margin-top: 5px;
+    padding: 0;
   }
   
 
@@ -118,58 +116,5 @@
     transform: translateX(0);
   }
 
-  .check-mark {
-    color: #8A4B08;
-  }
-  
-  @media (min-width: 768px) {
 
-    .container_title {
-        font-size: 35px;
-        font-style: italic;
-      }
-    .container p {
-        font-size: 25px;
-    }
-
-    .container-header, 
-    .container-list {
-      padding: 20px;
-  }
-
-    .footer .col-md-4 {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-    .footer {
-      flex-direction: row;
-      align-items: space-between;
-    }
-    .footer p {
-        text-align: center;
-    } 
-    .slide-list li {
-        font-size: 30px
-    }
-
-    .navbar-brand img {
-      width: 200px;
-      height: 100px;
-    }
-    .check-mark {
-      color: #8A4B08;
-    }
-
-    .form-container,
-    .form-control {
-      font-size: 25px;
-
-    }
-    .form-group input,
-    .form-group textarea {
-      font-size: 25px;
-      margin-top: 10px;
-      color: #8A4B08;
-}
-
-  }
+ 
