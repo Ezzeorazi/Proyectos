@@ -50,7 +50,7 @@
 
 .carousel {
   height: 250px;
-  margin-top: 10px;
+  margin-top: 70px;
 }
 
 .carousel-item img {
@@ -91,7 +91,7 @@
   }
 
 .slide-list li {
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
 }
 
