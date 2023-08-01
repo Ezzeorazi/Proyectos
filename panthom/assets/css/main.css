@@ -1,6 +1,14 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+  font-family: 'OpenSansCondensed-SemiBoldItalic', Arial, sans-serif; /* Nombre que usarás para referenciar la fuente */
+  src: url('/assets/webfonts/OpenSans_Condensed-SemiBoldItalic.ttf') format('truetype'); /* Ruta del archivo .ttf */
+}
+@font-face {
+	font-family: 'OpenSansCondensed-Medium', Arial, sans-serif; /* Nombre que usarás para referenciar la fuente */
+	src: url('/assets/webfonts/OpenSans_Condensed-Medium.ttf') format('truetype'); /* Ruta del archivo .ttf */
+  }
 
 /*
 	Phantom by HTML5 UP
@@ -122,7 +130,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #A68B67;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'OpenSansCondensed-Medium', 'Open Sans', sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -182,7 +190,7 @@ input, select, textarea {
 		line-height: 1.3;
 		margin: 0 0 1em 0;
 		letter-spacing: -0.035em;
-		font-family: "OpenSans_Condensed-SemiBoldItalic", sans-serif;
+		font-family: 'OpenSans_Condensed-SemiBoldItalic', sans-serif;
 	}
 
 		h1 a {
@@ -282,7 +290,7 @@ input, select, textarea {
 		background: rgba(144, 144, 144, 0.075);
 		border-radius: 4px;
 		border: solid 1px #c9c9c9;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'OpenSansCondensed-Medium','Open Sans', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -290,7 +298,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: 'OpenSansCondensed-Medium', "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -1827,7 +1835,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Open Sans', sans-serif;
+			font-family: 'OpenSansCondensed-Medium', 'Open Sans', sans-serif;
 			font-weight: 400;
 		}
 
@@ -1844,7 +1852,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Open Sans', sans-serif;
+			font-family: 'OpenSansCondensed-Medium', 'Open Sans', sans-serif;
 		}
 
 		.icon.style2 {
@@ -2056,7 +2064,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		margin: -1em 0 2em -1em;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'OpenSansCondensed-Medium', 'Open Sans', sans-serif;
 		
 	}
 
@@ -2265,7 +2273,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Open Sans', sans-serif;
+				font-family: 'OpenSansCondensed-Medium', 'Open Sans', sans-serif;
 				font-weight: 900;
 			}
 
@@ -3009,7 +3017,7 @@ input, select, textarea {
 		}
 
 		#menu > .inner h1 {
-			font-style: italic;
+			font-family: 'OpenSansCondensed-Medium';
 		}
 
 			#menu > .inner > ul {
@@ -3154,7 +3162,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 0em 0 6em 0 ;
+		padding: 1em 0 6em 0 ;
 		text-align: center;
 		margin-top: 5px;
 		font-style: italic;
@@ -3176,7 +3184,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 3em 0 3em 0 ;
 		background-color: black;
 		border-top: 5px solid #585858;
 		
@@ -3471,22 +3479,24 @@ input, select, textarea {
 		
 		#losNonos p {
 			font-size: 20px;
+			font-family: 'OpenSansCondensed-Medium';
 		}
 
 		#fichatecnica h3 {
-			font-family: "OpenSans_Condensed-SemiBoldItalic", sans-serif;
+			font-family: "OpenSansCondensed-SemiBoldItalic", sans-serif;
 			text-decoration: underline;
 		}
 
+		.text-container {
+		
+			font-family: 'OpenSansCondensed-Medium';
+		}
 		#uso p {
 			text-align: start;
 		}
 
 		
-		#losNonos p {
-			font-style: normal;
-			}
-
+		
 		#losNonos span {
 			font-style: italic;
 		}
@@ -3629,3 +3639,102 @@ input, select, textarea {
 		font-weight: bold;
 	  }
   }
+
+
+  /* Estilos para la sección de fotos */
+.photo-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+	flex-direction: row;
+	
+	
+}
+  
+  .photo {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+.container__boton { 
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* Agregar estilos para centrar los botones verticalmente */
+  align-items: center;
+  height: 200px; /* Altura fija para los botones */
+}
+
+.container__boton img { 
+  width: 300px;
+  height: auto;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar transiciones suaves */
+}
+
+.container__boton a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  position: relative; /* Permitir que el texto se posicione con respecto al contenedor */
+}
+
+/* Efecto hover */
+.container__boton a:hover img {
+  transform: scale(1.1); /* Agranda la imagen en un 10% */
+}
+
+.container__boton span{
+  position: absolute; /* Posicionar el texto en el fondo del botón */
+  bottom: -40px; /* Ajustar la distancia del texto desde la parte inferior del botón */
+  left: 50%; /* Centrar horizontalmente el texto */
+  transform: translateX(-50%); /* Ajustar el centrado horizontal */
+  color: #A68B67; /* Color del texto */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .container__boton {
+    flex-direction: column;
+    height: auto; /* Eliminar altura fija para que se ajuste al contenido */
+  }
+  
+  .container__boton img {
+    width: 80%; /* Reducir el tamaño de las imágenes en dispositivos móviles */
+    max-width: 300px; /* Establecer un máximo para asegurar que no se agranden demasiado */
+	margin-top: 50px;
+  }
+
+  .button-text {
+    position: static; /* Restaurar el posicionamiento normal en dispositivos móviles */
+    text-align: center; /* Centrar el texto horizontalmente en dispositivos móviles */
+    transform: none; /* Restaurar el centrado horizontal */
+    margin-top: 10px; /* Añadir un margen superior */
+  }
+}
+
+  
+  @media screen and (max-width: 768px) {
+	.photo-container {
+	  flex-direction: column;
+	}
+  
+	.photo {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+  
+	.photo img {
+	  max-width: 100%; /* Asegurar que la imagen no se salga del contenedor */
+	  max-height: 100%; /* Asegurar que la imagen no se salga del contenedor */
+	}
+  }
+
+  
