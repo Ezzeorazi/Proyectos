@@ -9,26 +9,36 @@
 		<link rel="icon" type="images.png"  href="images/logoFondoDorado.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" >
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
-
+							
 							<!-- Logo -->
-								<a href="index.html" class="logo">
+								<!-- <a href="index.html" class="logo">
 									<span class="symbol"><img src="images/logo.png" alt="" />
-								</a>
+								</a> -->
 
 							<!-- Nav -->
+								<!-- Navegación superior -->
+							<div class="navbar">
+								<!-- Logo -->
+								<a href="index.html" class="logo2">
+								<img src="images/logo.png" alt="Logo">
+								</a>
+								
+								</div> 
 								<nav>
 									<ul>
 										<li><a href="#menu">Menu</a></li>
 									</ul>
+									<!-- Enlaces de traducción -->
+								
 								</nav>
-
+							</div>
 						</div>
 					</header>
 
@@ -36,20 +46,30 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="generic.html">Quienes somos</a></li>
-							<li><a href="generic2.html">Beneficios</a></li>
-							<li><a href="generic3.html">Informacion Nutricional</a></li>
-							<li><a href="#footer">Contacto</a></li>
-							
+							<li><a href="index.html" data-translate="Inicio">Inicio</a></li>
+							<li><a href="generic.html" data-translate="Quienes Somos">Quienes Somos</a></li>
+							<li><a href="generic2.html"data-translate="Beneficios">Beneficios</a></li>
+							<li><a href="generic3.html"data-translate="Información Nutricional">Información Nutricional</a></li>
+							<li><a href="#footer"data-translate="Contacto">Contacto</a></li>
 						</ul>
+						<div class="language-links">
+							<div onclick="changeLanguage('es')">
+							  <img src="images/arg.png" alt="Español">
+							</div>
+							<div onclick="changeLanguage('en')">
+							  <img src="images/eeuu.png" alt="English">
+							</div>
+							<div onclick="changeLanguage('pt')">
+							  <img src="images/portugal.png" alt="Português">
+							</div>
+						  </div>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>ALIMENTOS ENERGETICOS PARA EQUINOS DE ALTO RENDIMIENTO</h1>
+								<h1 data-translate="ALIMENTOS ENERGETICOS PARA EQUINOS DE ALTO RENDIMIENTO">ALIMENTOS ENERGETICOS PARA EQUINOS DE ALTO RENDIMIENTO</h1>
 								<!-- <p>Conocé los beneficios de Golden Horses elaborado 100% con granos extrusados</p> -->
 							</header>
 							<!--<section class="tiles">
@@ -91,15 +111,15 @@
 								<div class="container__boton">
 									<a href="generic.html">
 									  <img src="images/elementos web golden horses-06.png" alt="Botón 1">
-									  <span class="button-text">Quienes Somos</span>
+									  <span class="button-text" data-translate="Quienes Somos">Quienes Somos</span>
 									</a>
 									<a href="generic2.html">
 									  <img src="images/elementos web golden horses-07.png" alt="Botón 2">
-									  <span class="button-text">Beneficios</span>
+									  <span class="button-text" data-translate="Beneficios">Beneficios</span>
 									</a>
 									<a href="generic3.html">
 									  <img src="images/elementos web golden horses-08.png" alt="Botón 3">
-									  <span class="button-text">Información Nutricional</span>
+									  <span class="button-text" data-translate="Información Nutricional">Información Nutricional</span>
 									</a>
 								  </div>
 							</section>
@@ -111,26 +131,26 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Contactanos</h2>
+								<h2 data-translate="Contactanos">Contactanos</h2>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Nombre" />
+											<input type="text" name="name" id="name" placeholder="Nombre" data-translate="Nombre"/>
 										</div>
 										<div class="field half">
 											<input type="email" name="email" id="email" placeholder="Email" />
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Mensaje"></textarea>
+											<textarea name="message" id="message" placeholder="Mensaje" data-translate="Mensaje"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Enviar" class="primary" /></li>
+										<li><input type="submit" value="Enviar" class="primary" data-translate="Enviar" /></li>
 									</ul>
 								</form>
 							</section>
 							<section>
-								<h2>Donde Estamos</h2>
+								<h2 data-translate="Donde Estamos">Donde Estamos</h2>
 								<ul class="icons">
 									<li><i class="fab fa-whatsapp"></i>
 										<a href="https://wa.me/549347162135">+54 9 3471 621535</a><br></li>
@@ -157,13 +177,119 @@
 
 			</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<script>
+				// JavaScript para cambiar el idioma
+				var currentLanguage = 'es';
+
+					// Función para cambiar el idioma
+					function changeLanguage(language) {
+					var translations = {
+					'ALIMENTOS ENERGETICOS PARA EQUINOS DE ALTO RENDIMIENTO': {
+					  'es': 'ALIMENTOS ENERGETICOS PARA EQUINOS DE ALTO RENDIMIENTO',
+					  'en': 'ENERGETIC FOOD FOR HIGH PERFORMANCE EQUINES',
+					  'pt': 'ALIMENTOS ENERGÉTICOS PARA EQUINOS DE ALTO RENDIMENTO',
+					},
+					'Quienes Somos': {
+					  'es': 'Quienes Somos',
+					  'en': 'About us',
+					  'pt': 'Sobre nós',
+					},
+					'Beneficios': {
+					  'es': 'Beneficios',
+					  'en': 'Benefits',
+					  'pt': 'Benefícios',
+					},
+					'Información Nutricional': {
+					  'es': 'Información Nutricional',
+					  'en': 'Nutritional Information',
+					  'pt': 'Informações Nutricionais',
+					},
+					'Menu': {
+					  'es': 'Menu',
+					  'en': 'Menu',
+					  'pt': 'Menu',
+					},
+					'Inicio': {
+					  'es': 'Inicio',
+					  'en': 'Home',
+					  'pt': 'Início',
+					},
+					'Contacto': {
+					  'es': 'Contacto',
+					  'en': 'Contact',
+					  'pt': 'Contato',
+					},
+					'Contactanos': {
+						'es': 'Contáctanos',
+						'en': 'Contact Us',
+						'pt': 'Contate-nos',
+					},
+					'Nombre': {
+						'es': 'Nombre',
+						'en': 'Name',
+						'pt': 'Nome',
+					},
+					'Email': {
+						'es': 'Email',
+						'en': 'Email',
+						'pt': 'Email',
+					},
+					'Mensaje': {
+						'es': 'Mensaje',
+						'en': 'Message',
+						'pt': 'Mensagem',
+					},
+					'Enviar': {
+						'es': 'Enviar',
+						'en': 'Send',
+						'pt': 'Enviar',
+					},
+					'Donde Estamos': {
+						'es': 'Dónde Estamos',
+						'en': 'Where We Are',
+						'pt': 'Onde Estamos',
+					},
+
+				};
+
+					// Obtener todos los botones de las banderas
+					var languageButtons = document.querySelectorAll('.language-links div');
+
+					// Restablecer el atributo 'disabled' en todos los botones de las banderas
+					languageButtons.forEach(function (button) {
+					button.removeAttribute('disabled');
+					});
+
+					// Verificar si el idioma seleccionado es diferente al actual
+					if (language !== currentLanguage) {
+					// Cambiar el idioma de los elementos con el atributo 'data-translate'
+					var elementsToTranslate = document.querySelectorAll('[data-translate]');
+					elementsToTranslate.forEach(function (element) {
+						var originalText = element.textContent;
+						if (translations[originalText] && translations[originalText][language]) {
+						element.textContent = translations[originalText][language];
+						}
+					});
+
+					// Actualizar la variable del idioma actual
+					currentLanguage = language;
+					}
+
+					// Desactivar el botón de la bandera seleccionada
+					var selectedButton = document.querySelector('.language-links div[data-lang="' + language + '"]');
+					selectedButton.setAttribute('disabled', 'disabled');
+					}
+			  </script>
+		
+		
 
 	</body>
 </html>
