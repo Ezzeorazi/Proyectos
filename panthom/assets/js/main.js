@@ -209,3 +209,27 @@ $(window).scroll(function() {
 	});
   });
 
+  
+  document.addEventListener("DOMContentLoaded", function () {
+	const carouselItems = document.querySelectorAll(".carousel-item");
+	let currentIndex = 0;
+	let slideWidth = carouselItems[0].clientWidth;
+  
+	function showSlide(index) {
+	  const offset = -index * slideWidth;
+	  document.querySelector(".carousel-inner").style.transform = `translateX(${offset}px)`;
+	}
+  
+	function showNextSlide() {
+	  currentIndex++;
+	  if (currentIndex === carouselItems.length) {
+		// Si llegamos al final, volvemos al inicio
+		currentIndex = 0;
+	  }
+	  showSlide(currentIndex);
+	}
+  
+	// Intervalo para cambiar de slide cada 5 segundos (ajusta el tiempo según tus preferencias)
+	setInterval(showNextSlide, 3000);
+  });
+  
