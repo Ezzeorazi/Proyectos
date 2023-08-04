@@ -1,0 +1,162 @@
+/* fuente */
+/* Definición de las fuentes personalizadas usando @font-face */
+@font-face {
+  font-family: 'OpenSansCondensedLight';
+  src: url('/font/OpenSans_Condensed-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansCondensedMedium';
+  src: url('/font/OpenSans_Condensed-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansCondensedRegular';
+  src: url('/font/OpenSans_Condensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansCondensedSemiBold';
+  src: url('/font/OpenSans_Condensed-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansCondensedSemiBoldItalic';
+  src: url('/font/OpenSans_Condensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.light {
+  background-color: black;
+  color: #A68B67;
+  font-family: 'OpenSansCondensedLight';
+}
+
+.medium {
+  background-color: black;
+  color: #A68B67;
+  font-family: 'OpenSansCondensedMedium';
+}
+
+.regular {
+  background-color: black;
+  color: #A68B67;
+  font-family: 'OpenSansCondensedRegular';
+}
+
+.semibold {
+  background-color: black;
+  color: #A68B67;
+  font-family: 'OpenSansCondensedSemiBold';
+}
+
+.semibolditalic{
+  background-color: black;
+  color: #A68B67;
+  font-family: 'OpenSansCondensedSemiBoldItalic';
+}
+
+
+
+
+
+/* text */
+.text-custom {
+  color: #A68B67; 
+  font-family: 'OpenSansCondensedMedium';
+}
+
+
+.btn-custom {
+  background-color: #A68B67;
+  
+}
+
+strong {
+  font-style: italic;
+}
+
+/* header */
+
+.navbar-brand img {
+    width: 120px;
+    height: auto;
+}
+
+
+
+.custom-toggler {
+    position: fixed;
+    top: 30px; /* Ajusta el valor de 'top' según desees */
+    right: 10px; /* Ajusta el valor de 'right' según desees */
+    z-index: 1; /* Asegura que el botón esté por encima del contenido */
+  }
+  .nav-item a{
+    margin-left: 15px;
+   
+  }
+  .nav-item a:hover {
+    font-size: 110%;
+  }
+/* carrousel */
+@media (max-width: 767px) {
+.carousel-caption {
+  font-size: 10px;
+  margin-bottom: -20px;
+}
+
+.col-md-6 img {
+  margin-top: 30px;
+}
+.image-container img {
+  margin-top: 40px;
+}
+
+}
+
+
+/* main */
+.main {
+    background-color: black;
+}
+
+
+
+.image-container img:hover {
+    transform: scale(1.1);
+    
+}
+
+.value{
+  font-family: 'OpenSansCondensedSemiBold';
+}
+
+.main h3 {
+  color: #A68B67;
+  font-family: 'OpenSansCondensedSemiBold';
+}
+
+/* footer */
+
+.list-unstyled a:hover {
+  border-bottom: 1px solid #A68B67;
+}
+
+
+.login-box input:focus,
+.login-box textarea:focus
+ {
+    border-color: #a68b67; /* Cambia el color del borde de enfoque */
+    box-shadow: 0 0 5px rgba(166, 139, 103, 0.5); /* Agrega una sombra de enfoque */
+    /* Otros estilos personalizados que desees para el enfoque */
+}
+
