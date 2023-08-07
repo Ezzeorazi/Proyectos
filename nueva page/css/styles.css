@@ -3,65 +3,60 @@
 @font-face {
   font-family: 'OpenSansCondensedLight';
   src: url('/font/OpenSans_Condensed-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+ 
 }
 
 @font-face {
   font-family: 'OpenSansCondensedMedium';
   src: url('/font/OpenSans_Condensed-Medium.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+ 
 }
 
 @font-face {
   font-family: 'OpenSansCondensedRegular';
   src: url('/font/OpenSans_Condensed-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+ 
 }
 
 @font-face {
   font-family: 'OpenSansCondensedSemiBold';
   src: url('/font/OpenSans_Condensed-SemiBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  
 }
 
 @font-face {
   font-family: 'OpenSansCondensedSemiBoldItalic';
   src: url('/font/OpenSans_Condensed-SemiBoldItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+  
 }
 
 .light {
-  background-color: black;
-  color: #A68B67;
+  background-color: #191919;
+  color: #AEA902;
   font-family: 'OpenSansCondensedLight';
 }
 
 .medium {
-  background-color: black;
-  color: #A68B67;
+  background-color: #191919;
+  color: #E1DB1D;
   font-family: 'OpenSansCondensedMedium';
 }
 
 .regular {
-  background-color: black;
-  color: #A68B67;
+  background-color: #191919;
+  color: #DAA520 ;
   font-family: 'OpenSansCondensedRegular';
 }
 
 .semibold {
-  background-color: black;
-  color: #A68B67;
+  background-color: #191919;
+  color: #EFB810;
   font-family: 'OpenSansCondensedSemiBold';
 }
 
 .semibolditalic{
-  background-color: black;
-  color: #A68B67;
+  background-color: #191919;
+  color: #EAC102;
   font-family: 'OpenSansCondensedSemiBoldItalic';
 }
 
@@ -129,7 +124,7 @@ strong {
     background-color: black;
 }
 
-
+.imagen:hover {filter: sepia(60%);}
 
 .image-container img:hover {
     transform: scale(1.1);
@@ -145,7 +140,15 @@ strong {
   font-family: 'OpenSansCondensedSemiBold';
 }
 
+.card:hover {
+border-radius: 15px;
+box-shadow: 0px 0px 5px 5px #a68b67;
+-webkit-box-shadow: 0px 0px 5px 5px #A68B67;
+transform: rotate(360deg);
+}
 /* footer */
+
+
 
 .list-unstyled a:hover {
   border-bottom: 1px solid #A68B67;
