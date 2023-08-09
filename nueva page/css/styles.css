@@ -1,6 +1,6 @@
 /* fuente */
 /* Definición de las fuentes personalizadas usando @font-face */
-@font-face {
+/* @font-face {
   font-family: 'OpenSansCondensedLight';
   src: url('/font/OpenSans_Condensed-Light.ttf') format('truetype');
  
@@ -28,36 +28,46 @@
   font-family: 'OpenSansCondensedSemiBoldItalic';
   src: url('/font/OpenSans_Condensed-SemiBoldItalic.ttf') format('truetype');
   
-}
+} */
 
 .light {
   background-color: #191919;
   color: #AEA902;
-  font-family: 'OpenSansCondensedLight';
+  font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 300;
 }
 
 .medium {
   background-color: #191919;
   color: #E1DB1D;
-  font-family: 'OpenSansCondensedMedium';
+  font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 700;
+
 }
 
 .regular {
   background-color: #191919;
   color: #DAA520 ;
-  font-family: 'OpenSansCondensedRegular';
+  font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 400;
+
 }
 
 .semibold {
   background-color: #191919;
   color: #EFB810;
-  font-family: 'OpenSansCondensedSemiBold';
+  font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 600;
+
 }
 
 .semibolditalic{
   background-color: #191919;
   color: #EAC102;
-  font-family: 'OpenSansCondensedSemiBoldItalic';
+  font-family: 'Open Sans Condensed', sans-serif;
+font-weight: 600;
+font-style: italic;
+
 }
 
 
@@ -67,7 +77,8 @@
 /* text */
 .text-custom {
   color: #A68B67; 
-  font-family: 'OpenSansCondensedMedium';
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
 }
 
 
@@ -116,6 +127,11 @@ strong {
   margin-top: 40px;
 }
 
+.reciclaje, 
+.senasa {
+  text-align: center;
+}
+
 }
 
 
@@ -132,12 +148,15 @@ strong {
 }
 
 .value{
-  font-family: 'OpenSansCondensedSemiBold';
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
 }
 
 .main h3 {
   color: #A68B67;
-  font-family: 'OpenSansCondensedSemiBold';
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .card:hover {
@@ -160,6 +179,35 @@ transform: rotate(360deg);
  {
     border-color: #a68b67; /* Cambia el color del borde de enfoque */
     box-shadow: 0 0 5px rgba(166, 139, 103, 0.5); /* Agrega una sombra de enfoque */
-    /* Otros estilos personalizados que desees para el enfoque */
+   
 }
 
+
+
+.reciclaje img {
+  width: 45px;
+}
+
+.senasa img {
+  width: 75px;
+}
+
+.select select:focus
+ {
+    border-color: #a68b67; 
+    box-shadow: 0 0 5px rgba(166, 139, 103, 0.5); 
+}
+
+
+@media (max-width: 350px) {
+  .navbar-brand img {
+    margin-top: -10px;
+    width: 100px;
+    height: auto;
+
+  }
+  .select {
+    margin-top: -10px;
+  }
+
+}
